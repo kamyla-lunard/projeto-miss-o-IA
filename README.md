@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
+  <!-- Você decide o futuro da I.A -->
+
+  <title>Você decide o futuro da I.A.</title>
+</head>
 
   <body>
   
