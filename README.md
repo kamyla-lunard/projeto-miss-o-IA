@@ -7,12 +7,17 @@
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
-  <!-- Você decide o futuro da I.A -->
+  <!-- Voce decide o futuro da I.A -->
 
-  <title>Você decide o futuro da I.A.</title>
+  <title>Voce decide o futuro da I.A.</title>
 </head>
-
-  <body>
-  
-  </body>
+  <<body>
+  <div class="caixa-principal">
+    <h1>Voce decide o futuro da IA</h1>
+    <div class="caixa-perguntas"></div>
+    <div class="caixa-alternativas"></div>
+    <div class="caixa-resultado">
+        <p class="texto-resultado"></p>
+    </div>
+</body>
 </html> 
