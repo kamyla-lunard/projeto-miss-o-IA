@@ -12,25 +12,25 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Isso e assustador!",
-                afirmacao: "Voce ficou preocupado com o avanço daquela tecnologia e decidiu observar com cuidado o que ela poderia fazer."
+                afirmacao: "Voce ficou preocupado com o avanco daquela tecnologia e decidiu observar com cuidado o que ela poderia fazer."
             },
             {
-                texto: "Isso é maravilhoso!",
-                afirmacao: "Você ficou curioso com as possibilidades da tecnologia e decidiu descobrir como ela funcionava."
+                texto: "Isso e maravilhoso!",
+                afirmacao: "Voce ficou curioso com as possibilidades da tecnologia e decidiu descobrir como ela funcionava."
             }
         ]
     },
 
     {
-        enunciado: "No dia seguinte, sua professora de tecnologia explica que aquela ferramenta utiliza Inteligência Artificial. Ela pede que você faça um trabalho sobre tecnologia. O que você faz?",
+        enunciado: "No dia seguinte, sua professora de tecnologia explica que aquela ferramenta utiliza Inteligencia Artificial. Ela pede que voce faa um trabalho sobre tecnologia. O que você faz?",
         alternativas: [
             {
                 texto: "Uso a IA para pesquisar e entender o assunto.",
-                afirmacao: "Você utilizou a Inteligência Artificial para encontrar informações, mas também pesquisou outras fontes para entender melhor o assunto."
+                afirmacao: "Voce utilizou a Inteligencia Artificial para encontrar informacoes, mas tambem pesquisou outras fontes para entender melhor o assunto."
             },
             {
-                texto: "Faço o trabalho sozinho com minhas pesquisas.",
-                afirmacao: "Você decidiu pesquisar por conta própria, utilizando seus conhecimentos e informações encontradas na internet."
+                texto: "Faco o trabalho sozinho com minhas pesquisas.",
+                afirmacao: "Voce decidiu pesquisar por conta propria, utilizando seus conhecimentos e informacees encontradas na internet."
             }
         ]
     },
