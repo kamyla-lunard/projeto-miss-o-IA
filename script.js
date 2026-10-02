@@ -6,100 +6,78 @@ const caixaResultado = document.querySelector(".caixa-resultado");
 const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
+  const perguntas = [
     {
-        enunciado: "Assim que saiu da escola você se depara com uma nova tecnologia, um chat que consegue responder todas as dúvidas que uma pessoa pode ter, ele também gera imagens e áudios hiper-realistas. Qual o primeiro pensamento?",
+        enunciado: "Assim que saiu da escola, voce se depara com uma nova tecnologia: um chat capaz de responder duvidas, criar imagens e gerar audios. Qual e seu primeiro pensamento?",
         alternativas: [
             {
-                texto: "Isso é assustador!",
-                afirmacao: "afirmacao"
+                texto: "Isso e assustador!",
+                afirmacao: "Voce ficou preocupado com o avanço daquela tecnologia e decidiu observar com cuidado o que ela poderia fazer."
             },
             {
                 texto: "Isso é maravilhoso!",
-                afirmacao: "afirmacao"
-            }           
-            
-        ]
-    },
-    {
-        enunciado: "Com a descoberta desta tecnologia, chamada Inteligência Artificial (IA), uma professora de tecnologia da escola decidiu fazer uma sequência de aulas sobre elaIA. No fim de uma aula ela pede que você escreva um trabalho sobre o uso de tecnologia em sala de aula. Qual atitude você toma?",
-        alternativas: [
-            {
-                texto:"Utilizar uma ferramenta de busca na internet que utiliza IA para que ela ajude a encontrar informações relevantes para o trabalho e explique numa linguagem que facilite o entendimento",
-                afirmacao:"afirmacao"
-            },
-            {
-                texto: "Escrever o trabalho com base nas conversas que teve com colegas, algumas pesquisas na internet e conhecimentos próprios sobre o tema.",
-                afirmacao:"afirmacao"
+                afirmacao: "Você ficou curioso com as possibilidades da tecnologia e decidiu descobrir como ela funcionava."
             }
         ]
     },
+
     {
-        enunciado: "Após a elaboração do trabalho, a professora realizou um debate entre a turma para entender como foi realizada a pesquisa e escrita. Nessa conversa também foi levantado um ponto muito importante: como a IA impacta o trabalho do futuro. Nesse debate, como você se posiciona?",
+        enunciado: "No dia seguinte, sua professora de tecnologia explica que aquela ferramenta utiliza Inteligência Artificial. Ela pede que você faça um trabalho sobre tecnologia. O que você faz?",
         alternativas: [
             {
-                texto:"Me preocupo com as pessoas que perderão seus empregos para máquinas e defendem a importância de proteger os trabalhadores.",
-                afirmacao:"afirmacao"
+                texto: "Uso a IA para pesquisar e entender o assunto.",
+                afirmacao: "Você utilizou a Inteligência Artificial para encontrar informações, mas também pesquisou outras fontes para entender melhor o assunto."
             },
             {
-                texto:"Defende a ideia de que a IA pode criar novas oportunidades de emprego e melhorar habilidades humanas.",
-                afirmacao:"afirmacao"
+                texto: "Faço o trabalho sozinho com minhas pesquisas.",
+                afirmacao: "Você decidiu pesquisar por conta própria, utilizando seus conhecimentos e informações encontradas na internet."
             }
-            
         ]
     },
+
     {
-        enunciado: "Ao final da discussão, você precisou criar uma imagem no computador que representasse o que pensa sobre IA. E agora?",
+        enunciado: "Depois do trabalho, a professora propoe um debate sobre como a IA pode mudar o futuro. Qual e sua opiniao?",
         alternativas: [
             {
-                texto:"Criar uma imagem utilizando uma plataforma de design como o Paint.",
-                afirmacao:"afirmacao"
+                texto: "A IA pode substituir alguns trabalhadores.",
+                afirmacao: "Durante o debate, voce explicou que algumas profissoes podem mudar com o avanco da Inteligencia Artificial e que sera importante aprender novas habilidades."
             },
             {
-                texto:"Criar uma imagem utilizando um gerador de imagem de IA.",
-                afirmacao:"afirmacao"
+                texto: "A IA pode criar novas oportunidades.",
+                afirmacao: "Voce explicou que a Inteligencia Artificial tambem pode criar novas oportunidades e ajudar as pessoas em diferentes profissoes."
             }
-            
         ]
     },
+
     {
-        enunciado: " Você tem um trabalho em grupo de biologia para entregar na semana seguinte, o andamento do trabalho está um pouco atrasado e uma pessoa do seu grupo decidiu fazer com ajuda de uma IA. O problema é que o trabalho está totalmente igual ao do chat. O que você faz?",
-        alternativas: [
+        enunciado: "No final da aula, a professora pede que voce crie uma imagem representando sua visao sobre a Inteligencia Artificial. O que voce faz?",
+        alternativas: 
             {
-                texto: "O chat pode ser uma tecnologia muito avançada, mas é preciso manter a atenção pois toda máquina erra, por isso revisar o trabalho e contribuir com as perspectivas pessoais é essencial.",
-                afirmacao:"afirmacao"
+                texto: "Crio a imagem manualmente.",
+                afirmacao: "Voce decidiu criar a imagem sozinho, usando sua criatividade para representar como imaginava o futuro."
             },
             {
-                texto: "Escrever comandos para o chat é uma forma de contribuir com o trabalho, por isso não é um problema utilizar o texto inteiro.",
-                afirmacao:"afirmacao"
+                texto: "Uso um gerador de imagens com IA.",
+                afirmacao: "Voce utilizou uma ferramenta de IA para transformar suas ideias em uma imagem e depois analisou o resultado."
             }
-            
-            
         ]
     },
+
+    {
+        enunciado: "Alguns dias depois, voce recebe um trabalho de biologia em grupo. Um colega utiliza IA para fazer praticamente todo o trabalho. O que voce faz?",
+        alternativas: 
+            {
+                texto: "Reviso o trabalho e contribuo com minhas proprias ideias.",
+                afirmacao: "Voce explicou ao grupo que a IA poderia ajudar, mas que era importante revisar as informacoes e acrescentar as ideias de cada integrante."
+            },
+            {
+                texto: "Deixo a IA fazer o trabalho inteiro.",
+                afirmacao: "O grupo decidiu entregar o texto produzido pela IA, mas percebeu depois que algumas informacoes precisavam ser verificadas."
+            }
+        ]
+    }
 ];
 
-let atual = 0; 
-let perguntaAtual;
-let historiaFinal = "";
-
-function mostraPergunta() {
-    if(atual >= perguntas.length){
-        mostraResultado();
-        return;
-    }
-    perguntaAtual = perguntas[atual];
-    caixaPerguntas.textContent = perguntaAtual.enunciado;
-    caixaAlternativas.textContent = "";
-    mostraAlternativas();
-}
-
-function mostraAlternativas(){
-    for(const alternativa of perguntaAtual.alternativas){
-        const botaoAlternativas = document.createElement("button");
-        botaoAlternativas.textContent = alternativa.texto;
-        botaoAlternativas.addEventListener("click", () => respostaSelecionada(alternativa));
-        caixaAlternativas.appendChild(botaoAlternativas);
-    }
 }
 
 function respostaSelecionada(opcaoSelecionada){
