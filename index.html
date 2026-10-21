@@ -1,20 +1,67 @@
+
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Você decide o futuro da IA</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biju da Kamyla 💎</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="caixa-principal">
-        <h1>Você decide o futuro da IA</h1>
-        <div class="caixa-perguntas"></div>
-        <div class="caixa-alternativas"></div>
-        <div class="caixa-resultado">
-            <p class="texto-resultado"></p>
-        </div>
-    </div>
-    <script src="script.js"></script>
+  <main class="game">
+    <header class="topo">
+      <span class="logo">💎</span>
+      <h1>Biju da Kamyla</h1>
+      <p>Uma história de escolhas, sonhos e brilho!</p>
+    </header>
+
+    <section class="loja">
+      <div class="vitrine" aria-hidden="true">
+        <span>📿</span>
+        <span>💍</span>
+        <span>✨</span>
+        <span>📿</span>
+        <span>💖</span>
+      </div>
+
+      <div class="personagem" aria-label="Kamyla, vendedora de bijuterias">
+        👩🏻‍💼
+      </div>
+      <p class="nome-personagem">Kamyla, a vendedora</p>
+
+      <div class="dialogo">
+        <p id="historia" aria-live="polite">
+          Oi, linda! 💕 Meu nome é Kamyla e acabei de abrir minha loja
+          de bijuterias. Quero realizar meu sonho de ser uma grande
+          empreendedora! Mas preciso da sua ajuda...
+        </p>
+      </div>
+
+      <h2 id="pergunta">O que Kamyla deve fazer primeiro?</h2>
+
+      <div id="opcoes" class="opcoes">
+        <button class="opcao" data-choice="0">
+          🌸 Divulgar a loja nas redes sociais
+        </button>
+        <button class="opcao" data-choice="1">
+          💎 Criar uma coleção de bijuterias
+        </button>
+        <button class="opcao" data-choice="2">
+          🛍️ Fazer uma promoção especial
+        </button>
+      </div>
+
+      <p id="progresso">Capítulo 1 · O começo de um sonho</p>
+
+      <button id="reiniciar" class="reiniciar" hidden>
+        ↻ Jogar novamente
+      </button>
+    </section>
+
+    <footer>
+      Feito com 💗 para quem ama bijuterias!
+    </footer>
+  </main>
 </body>
 </html>
